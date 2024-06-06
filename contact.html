@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+        <link rel="stylesheet" type="text/css" href="css/Styles.css" />
     </head>
 
     <body>
@@ -39,27 +39,30 @@
             </nav>
         </header>
         <main>
-            <form action="" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">E-mail: </label>
-                <input type="email" id="contact-email" required />
-                <br />
-                <label class="standard-label" for="contact-telephone">Telephone: </label>
-                <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
-                <br />
-                <label class="standard-label" for="contact-message">Message:</label>
-                <textarea maxlength="240" id="contact-message" required></textarea>
-                <br />
-                <br />
-                <input type="submit" value="Send message" />
-            </form>
-
-            <div>
+            <div class="contact-info">
                 <h1>Jeffrey Willard</h1>
                 1014 E. Mallory Street<br />
                 Pensacola, FL. 32503<br />
                 <a href="tel:+1-850-429-1265">Tel: +1 850 429 1265</a>
                 <br />
                 <a href="mailto:inquiry@396willard.com">Email: inquiry@396willard.com</a>
+            </div>
+            <div class="form-container">
+                <form action="#" method="post" id="contact-form">
+                    <p>
+                        <label class="standard-label" for="contact-email"></label>
+                        <input type="email" id="contact-email" placeholder="Email address" required />
+                    </p>
+                    <p>
+                        <label class="standard-label" for="contact-telephone"></label>
+                        <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Telphone" />
+                    </p>
+                    <p>
+                        <label class="standard-label" for="contact-message"></label>
+                        <textarea maxlength="240" id="contact-message" placeholder="Share a message with me" required></textarea>
+                    </p>
+                    <input type="submit" value="Send message" />
+                </form>
             </div>
         </main>
         <footer class="page-footer">

@@ -1,16 +1,15 @@
 /* CSS HEX Colot Palette
-    --primary-color: #060678ff;
-    --background-color: #f5f4f5ff;
-    --link-color: #d00000ff;
-    --visited-link: #0bad39ff;
-    --accent-orange: #f18f01ff;
-    --accent-blue: #0c0ce9ff;
-    --gridTile-Ltgray: #d3d3d3;
-    --sunStart: #edc655;
-    --sunHalf: #fcffad;
-    --sunEnd: #f76414;
- */
-
+--primary-color: #060678ff;
+--background-color: #f5f4f5ff;
+--link-color: #d00000ff;
+--visited-link: #0bad39ff;
+--accent-orange: #f18f01ff;
+--accent-blue: #0c0ce9ff;
+--gridTile-Ltgray: #d3d3d3;
+--sunStart: #edc655;
+--sunHalf: #fcffad;
+--sunEnd: #f76414;
+*/
 :root {
     --primary-color: #060678ff;
     --background-color: #f5f4f5ff;
@@ -55,13 +54,12 @@
 
 body {
     background-color: var(--background-color);
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-family: "sulpher point", sans-serif;
     font-weight: 400;
-    font-size: 16px;
     /*Sets the font size to 16px */
-    line-height: 1.6;
+    font-size: 16px;
     /*Sets the line-height to 1.6 */
-    text-align: justify;
+    line-height: 1.6;
 }
 
 .about-me {
@@ -80,6 +78,25 @@ body {
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
+}
+
+.contact-info {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-container {
+    display: block;
+    direction: center;
+    border: 5px solid #060678ff;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 40px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
 }
 
 h1 {
@@ -184,6 +201,13 @@ button:focus,
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    box-shadow: 0 2px 6px var(--accent-blue);
+    transition: transform 0.5s ease;
+}
+
+.project__item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .sun {

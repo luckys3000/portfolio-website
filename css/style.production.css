@@ -6,17 +6,17 @@
 */
 
 /* CSS HEX Colot Palette
---primary-color: #060678ff;
---background-color: #f5f4f5ff;
---link-color: #d00000ff;
---visited-link: #0bad39ff;
---accent-orange: #f18f01ff;
---accent-blue: #0c0ce9ff;
---gridTile-Ltgray: #d3d3d3;
---sunStart: #edc655;
---sunHalf: #fcffad;
---sunEnd: #f76414;
-*/
+    --primary-color: #060678ff;
+    --background-color: #f5f4f5ff;
+    --link-color: #d00000ff;
+    --visited-link: #0bad39ff;
+    --accent-orange: #f18f01ff;
+    --accent-blue: #0c0ce9ff;
+    --gridTile-Ltgray: #d3d3d3;
+    --sunStart: #edc655;
+    --sunHalf: #fcffad;
+    --sunEnd: #f76414;
+ */
 
 * {
     -webkit-box-sizing: border-box;
@@ -277,6 +277,9 @@ button:focus,
     color: #0c0ce9ff; /* Adjust color as needed */
     padding: 10px 20px; /* Adjust padding as needed */
     overflow: hidden;
+    -webkit-transition: font-size 0.3s;
+    -o-transition: font-size 0.3s;
+    transition: font-size 0.3s;
 }
 
 .navigation-list__item::before {
@@ -332,6 +335,10 @@ button:focus,
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.navigation-list__item:hover {
+    font-size: 1.3em; /* Increase text size on hover */
 }
 
 @media all and (max-width: 500px) {

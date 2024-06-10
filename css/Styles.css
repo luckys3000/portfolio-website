@@ -89,7 +89,6 @@ body {
 
 .form-container {
     display: block;
-    direction: center;
     border: 5px solid #060678ff;
     border-radius: 5px;
     width: fit-content;
